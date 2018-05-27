@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const config = require('./config.json');
 const commando = require('discord.js-commando');
 const ytdl = require('ytdl-core');
 
@@ -9,7 +10,8 @@ bot.registry.registerGroup('random', 'Random');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
-bot.login('NDUwMDY2NDY1NjczMTgzMjMy.Dewkaw.J101b0hSSJ_SlkheHBIhL0JPvuQ');
+// Log in bot to server
+bot.login(config.token);
 
 bot.on('message', (message)=> {
 
