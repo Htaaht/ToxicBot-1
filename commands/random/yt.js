@@ -17,7 +17,7 @@ class PlaySongCommand extends commando.Command{
     });
   }
 
-  const connection =
+
 
   async run(message, args){
 
